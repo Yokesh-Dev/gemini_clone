@@ -4,14 +4,14 @@
 //API - KEY
 
 // npm install @google/genai
-
+import dotenv from "dotenv";
 import { GoogleGenAI, HarmCategory, HarmBlockThreshold } from "@google/genai";
 
 const MODEL_NAME = "gemini-2.5-flash";
-const API_KEY = import.meta.env.REACT_APP_API_KEY; // visible for testing
-
+const HIPPIE = "AIzaSyBOVW91GoCAKNHyA9buPZy3TEv43ZdqRbw";
+// visible for testing
 async function runChat(prompt) {
-  const genAI = new GoogleGenAI({ apiKey: API_KEY });
+  const genAI = new GoogleGenAI({ apiKey: HIPPIE });
   const model = MODEL_NAME;
 
   const generationConfig = {
