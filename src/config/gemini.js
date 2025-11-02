@@ -1,7 +1,7 @@
 //API KEY
 //npm install @google/genai
 //Used Google AI studio
-//API - KEY = AIzaSyBOVW91GoCAKNHyA9buPZy3TEv43ZdqRbw
+//API - KEY
 
 // npm install @google/genai
 
@@ -81,7 +81,7 @@ export default runChat;
 import { GoogleGenAI, HarmCategory, HarmBlockThreshold } from "@google/genai";
 
 const MODEL_NAME = "gemini-2.0-flash";
-const API_KEY = "AIzaSyBOVW91GoCAKNHyA9buPZy3TEv43ZdqRbw";
+const API_KEY = "";
 
 async function runChat(prompt) {
   const genAI = new GoogleGenAI(API_KEY);
