@@ -8,7 +8,7 @@
 import { GoogleGenAI, HarmCategory, HarmBlockThreshold } from "@google/genai";
 
 const MODEL_NAME = "gemini-2.5-flash";
-const API_KEY = "AIzaSyBOVW91GoCAKNHyA9buPZy3TEv43ZdqRbw"; // visible for testing
+const API_KEY = import.meta.env.REACT_APP_API_KEY; // visible for testing
 
 async function runChat(prompt) {
   const genAI = new GoogleGenAI({ apiKey: API_KEY });
